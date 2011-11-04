@@ -1,0 +1,40 @@
+﻿Build started 9/30/2010 5:56:43 PM.
+     1>Project "C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\zlib\zlib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\zlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DEBUGZLIB_EXPORTS /Gm- /EHsc /MD /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /FR"Release\\" /Gd /TC /analyze- /errorReport:prompt "..\..\..\..\zlib-1.2.4\adler32.c" "..\..\..\..\zlib-1.2.4\compress.c" "..\..\..\..\zlib-1.2.4\crc32.c" "..\..\..\..\zlib-1.2.4\deflate.c" "..\..\..\..\zlib-1.2.4\infback.c" "..\..\..\..\zlib-1.2.4\inffast.c" "..\..\..\..\zlib-1.2.4\inflate.c" "..\..\..\..\zlib-1.2.4\inftrees.c" "..\..\..\..\zlib-1.2.4\trees.c" "..\..\..\..\zlib-1.2.4\uncompr.c" "..\..\..\..\zlib-1.2.4\zutil.c"
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Release\zlib.lib" /NOLOGO /LTCG Release\adler32.obj
+         Release\compress.obj
+         Release\crc32.obj
+         Release\deflate.obj
+         Release\infback.obj
+         Release\inffast.obj
+         Release\inflate.obj
+         Release\inftrees.obj
+         Release\trees.obj
+         Release\uncompr.obj
+         Release\zutil.obj
+         zlib.vcxproj -> C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Release\zlib.lib
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Release\zlib.bsc" Release\adler32.sbr Release\compress.sbr Release\crc32.sbr Release\deflate.sbr Release\infback.sbr Release\inffast.sbr Release\inflate.sbr Release\inftrees.sbr Release\trees.sbr Release\uncompr.sbr Release\zutil.sbr
+       FinalizeBuildStatus:
+         Deleting file "Release\zlib.unsuccessfulbuild".
+         Touching "Release\zlib.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\zlib\zlib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.12

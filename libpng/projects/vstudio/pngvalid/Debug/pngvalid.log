@@ -1,0 +1,39 @@
+﻿Build started 10/28/2010 5:40:02 PM.
+     1>Project "C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\pngvalid\pngvalid.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\pngvalid.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Debug\pngvalid.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Debug\\" libpng15.lib zlib.lib /MANIFEST /ManifestFile:"Debug\pngvalid.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Debug\pngvalid.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Debug\pngvalid.lib" /MACHINE:X86 Debug\pngvalid.obj
+         pngvalid.vcxproj -> C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Debug\pngvalid.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Debug\pngvalid.exe;#1" /manifest Debug\pngvalid.exe.intermediate.manifest
+       BscMake:
+         All outputs are up-to-date.
+       CustomBuildStep:
+         Description: Executing PNG validation program
+         "C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Debug\pngvalid.exe" --touch "Debug\pngvalid.out"
+         :VCEnd
+         Gamma correction error summary (output value error):
+           2 bit gray:  0.73181
+           4 bit gray:  0.81888
+           8 bit gray:  0.49978
+           8 bit color: 0.49978
+          16 bit gray:  0.74080
+          16 bit color: 0.74080
+         Gamma correction with sBIT:
+          16 bit gray:  0.74058
+          16 bit color: 0.74058
+         Results using floating point arithmetic (no errors or warnings)
+         Allocated memory statistics (in bytes):
+         	read  32768 maximum single, 183170 peak, 183170 total
+         	write 65536 maximum single, 283206 peak, 283206 total
+       FinalizeBuildStatus:
+         Deleting file "Debug\pngvalid.unsuccessfulbuild".
+         Touching "Debug\pngvalid.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\pngvalid\pngvalid.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:20.51

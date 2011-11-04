@@ -1,0 +1,53 @@
+﻿Build started 10/26/2011 6:57:55 PM.
+     1>Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\pngtest\pngtest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release Library\pngtest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\zlib /I..\..\..\scripts /Zi /nologo /W4 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MT /GS /Gy- /fp:precise /fp:except- /Zc:wchar_t /Zc:forScope /Fo"Release Library\\" /Fd"Release Library\vc100.pdb" /FR"Release Library\\" /Gd /TC /wd4996 /analyze- /errorReport:prompt ..\..\..\pngtest.c
+         pngtest.c
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\\" libpng15.lib zlib.lib /MANIFEST /ManifestFile:"Release Library\pngtest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.lib" /MACHINE:X86 "Release Library\pngtest.obj"
+            Creating library C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.lib and object C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.exp
+         Generating code
+         Finished generating code
+         pngtest.vcxproj -> C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.exe;#1" /manifest "Release Library\pngtest.exe.intermediate.manifest"
+       BscMake:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.bsc" "Release Library\pngtest.sbr"
+       CustomBuildStep:
+         Description: Executing PNG test program
+         "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\Release Library\pngtest.exe" ..\..\..\pngtest.png "Release Library\pngout.png"
+         :VCEnd
+         
+          Testing libpng version 1.5.0beta47
+            with zlib   version 1.2.4
+         libpng version 1.5.0beta47 - September 11, 2010      Copyright (c) 1998-2010 Glenn Randers-Pehrson      Copyright (c) 1996-1997 Andreas Dilger      Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc. library (10500): libpng version 1.5.0beta47 - September 11, 2010
+          pngtest (10500): libpng version 1.5.0beta47 - September 11, 2010
+         
+          Testing ..\..\..\pngtest.png:
+          Pass 0: rwrwrwrwrwrwrwrwrw
+          Pass 1: rwrwrwrwrwrwrwrwrw
+          Pass 2: rwrwrwrwrwrwrwrw
+          Pass 3: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+          Pass 4: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+          Pass 5: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+                  rwrwrwrw
+          Pass 6: rwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrwrw
+                  rwrwrwrwrw
+          PASS (9782 zero samples)
+          Filter 0 was used 21 times
+          Filter 1 was used 15 times
+          Filter 2 was used 52 times
+          Filter 3 was used 10 times
+          Filter 4 was used 33 times
+          tIME = 7 Jun 1996 17:58:08 +0000
+          libpng passes test
+       FinalizeBuildStatus:
+         Deleting file "Release Library\pngtest.unsuccessfulbuild".
+         Touching "Release Library\pngtest.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\pngtest\pngtest.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.86

@@ -1,0 +1,19 @@
+﻿Build started 10/26/2011 7:07:48 PM.
+     1>Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\pnglibconf\pnglibconf.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\pnglibconf.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\pnglibconf.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       FinalizeBuildStatus:
+         Deleting file "Release\pnglibconf.unsuccessfulbuild".
+         Touching "Release\pnglibconf.lastbuildstate".
+       CustomBuildStep:
+         Description: Generating pnglibconf.h
+         copy ..\..\..\scripts\pnglibconf.h.prebuilt ..\..\..\pnglibconf.h
+         :VCEnd
+                 1 file(s) copied.
+     1>Done Building Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\pnglibconf\pnglibconf.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.12

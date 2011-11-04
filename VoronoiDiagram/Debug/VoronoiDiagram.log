@@ -1,0 +1,17 @@
+﻿Build started 10/30/2011 3:37:45 PM.
+     1>Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\VoronoiDiagram\VoronoiDiagram.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\VoronoiDiagram.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\Debug\VoronoiDiagram.exe" /NOLOGO /LIBPATH:C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\\lib\ libpng15.lib /MANIFEST /ManifestFile:"Debug\VoronoiDiagram.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\Debug\VoronoiDiagram.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\Debug\VoronoiDiagram.lib" /MACHINE:X86 Debug\VoronoiDiagram.obj
+     1>VoronoiDiagram.obj : error LNK2019: unresolved external symbol "void __cdecl PNGTools::writePNGFile(char *,unsigned char * *,int,int,unsigned char)" (?writePNGFile@PNGTools@@YAXPADPAPAEHHE@Z) referenced in function _main
+     1>VoronoiDiagram.obj : error LNK2019: unresolved external symbol "unsigned short __cdecl PNGTools::normalizeTo16Bit(double)" (?normalizeTo16Bit@PNGTools@@YAGN@Z) referenced in function _main
+     1>VoronoiDiagram.obj : error LNK2019: unresolved external symbol "unsigned char __cdecl PNGTools::normalizeTo8Bit(double)" (?normalizeTo8Bit@PNGTools@@YAEN@Z) referenced in function _main
+     1>C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\Debug\VoronoiDiagram.exe : fatal error LNK1120: 3 unresolved externals
+     1>Done Building Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\VoronoiDiagram\VoronoiDiagram.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.11

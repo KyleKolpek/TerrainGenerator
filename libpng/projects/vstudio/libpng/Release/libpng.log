@@ -1,0 +1,22 @@
+﻿Build started 9/30/2010 5:58:40 PM.
+     1>Project "C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\libpng\libpng.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\libpng.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         libpng.vcxproj -> C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Release\libpng15.dll
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\Release\libpng15.bsc" Release\png.sbr Release\pngerror.sbr Release\pngget.sbr Release\pngmem.sbr Release\pngpread.sbr Release\pngread.sbr Release\pngrio.sbr Release\pngrtran.sbr Release\pngrutil.sbr Release\pngset.sbr Release\pngtrans.sbr Release\pngwio.sbr Release\pngwrite.sbr Release\pngwtran.sbr Release\pngwutil.sbr
+       FinalizeBuildStatus:
+         Deleting file "Release\libpng.unsuccessfulbuild".
+         Touching "Release\libpng.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Programs\libraries\libpng-1.5.0beta47\projects\vstudio\libpng\libpng.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.31

@@ -1,0 +1,19 @@
+﻿Build started 10/30/2011 3:37:44 PM.
+     1>Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\zlib\zlib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\zlib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Lib:
+         All outputs are up-to-date.
+         zlib.vcxproj -> C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\Debug\zlib.lib
+       BscMake:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\zlib.unsuccessfulbuild".
+         Touching "Debug\zlib.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\zlib\zlib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.04

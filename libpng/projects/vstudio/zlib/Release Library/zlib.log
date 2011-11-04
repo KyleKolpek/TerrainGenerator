@@ -1,0 +1,42 @@
+﻿Build started 10/26/2011 7:07:47 PM.
+     1>Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\zlib\zlib.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release Library\zlib.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Release Library\zlib.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX /Ox /Oi /Oy- /GL /Gm- /EHsc /MT /GS- /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release Library\\" /Fd"Release Library\vc100.pdb" /FR"Release Library\\" /Gd /TC /analyze- /errorReport:prompt ..\..\..\..\zlib\adler32.c ..\..\..\..\zlib\compress.c ..\..\..\..\zlib\crc32.c ..\..\..\..\zlib\deflate.c ..\..\..\..\zlib\infback.c ..\..\..\..\zlib\inffast.c ..\..\..\..\zlib\inflate.c ..\..\..\..\zlib\inftrees.c ..\..\..\..\zlib\trees.c ..\..\..\..\zlib\uncompr.c ..\..\..\..\zlib\zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\\lib\zlib.lib" /NOLOGO /LTCG "Release Library\adler32.obj"
+         "Release Library\compress.obj"
+         "Release Library\crc32.obj"
+         "Release Library\deflate.obj"
+         "Release Library\infback.obj"
+         "Release Library\inffast.obj"
+         "Release Library\inflate.obj"
+         "Release Library\inftrees.obj"
+         "Release Library\trees.obj"
+         "Release Library\uncompr.obj"
+         "Release Library\zutil.obj"
+         zlib.vcxproj -> C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\\lib\zlib.lib
+       BscMake:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\\lib\zlib.bsc" "Release Library\adler32.sbr" "Release Library\compress.sbr" "Release Library\crc32.sbr" "Release Library\deflate.sbr" "Release Library\infback.sbr" "Release Library\inffast.sbr" "Release Library\inflate.sbr" "Release Library\inftrees.sbr" "Release Library\trees.sbr" "Release Library\uncompr.sbr" "Release Library\zutil.sbr"
+       FinalizeBuildStatus:
+         Deleting file "Release Library\zlib.unsuccessfulbuild".
+         Touching "Release Library\zlib.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\zlib\zlib.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.25

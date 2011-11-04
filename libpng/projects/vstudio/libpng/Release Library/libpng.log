@@ -1,0 +1,51 @@
+﻿Build started 10/26/2011 7:07:53 PM.
+     1>Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\libpng\libpng.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release Library\libpng.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Release Library\libpng.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\zlib /Zi /nologo /W4 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /fp:except- /Zc:wchar_t- /Zc:forScope /Yc"pngpriv.h" /Fp"Release Library\libpng15.pch" /Fo"Release Library\\" /Fd"Release Library\vc100.pdb" /FR"Release Library\\" /Gd /TC /wd4996 /wd4127 /analyze- /errorReport:prompt ..\..\..\png.c
+         png.c
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\zlib /Zi /nologo /W4 /WX /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /fp:except- /Zc:wchar_t- /Zc:forScope /Yu"pngpriv.h" /Fp"Release Library\libpng15.pch" /Fo"Release Library\\" /Fd"Release Library\vc100.pdb" /FR"Release Library\\" /Gd /TC /wd4996 /wd4127 /analyze- /errorReport:prompt ..\..\..\pngerror.c ..\..\..\pngget.c ..\..\..\pngmem.c ..\..\..\pngpread.c ..\..\..\pngread.c ..\..\..\pngrio.c ..\..\..\pngrtran.c ..\..\..\pngrutil.c ..\..\..\pngset.c ..\..\..\pngtrans.c ..\..\..\pngwio.c ..\..\..\pngwrite.c ..\..\..\pngwtran.c ..\..\..\pngwutil.c
+         pngerror.c
+         pngget.c
+         pngmem.c
+         pngpread.c
+         pngread.c
+         pngrio.c
+         pngrtran.c
+         pngrutil.c
+         pngset.c
+         pngtrans.c
+         pngwio.c
+         pngwrite.c
+         pngwtran.c
+         pngwutil.c
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\\lib\libpng15.lib" /NOLOGO /LTCG "Release Library\png.obj"
+         "Release Library\pngerror.obj"
+         "Release Library\pngget.obj"
+         "Release Library\pngmem.obj"
+         "Release Library\pngpread.obj"
+         "Release Library\pngread.obj"
+         "Release Library\pngrio.obj"
+         "Release Library\pngrtran.obj"
+         "Release Library\pngrutil.obj"
+         "Release Library\pngset.obj"
+         "Release Library\pngtrans.obj"
+         "Release Library\pngwio.obj"
+         "Release Library\pngwrite.obj"
+         "Release Library\pngwtran.obj"
+         "Release Library\pngwutil.obj"
+         libpng.vcxproj -> C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\\lib\libpng15.lib
+       BscMake:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o"C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\\lib\libpng15.bsc" "Release Library\png.sbr" "Release Library\pngerror.sbr" "Release Library\pngget.sbr" "Release Library\pngmem.sbr" "Release Library\pngpread.sbr" "Release Library\pngread.sbr" "Release Library\pngrio.sbr" "Release Library\pngrtran.sbr" "Release Library\pngrutil.sbr" "Release Library\pngset.sbr" "Release Library\pngtrans.sbr" "Release Library\pngwio.sbr" "Release Library\pngwrite.sbr" "Release Library\pngwtran.sbr" "Release Library\pngwutil.sbr"
+       FinalizeBuildStatus:
+         Deleting file "Release Library\libpng.unsuccessfulbuild".
+         Touching "Release Library\libpng.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Programs\VisualStudioProjects\TerrainGenerator\libpng\projects\vstudio\libpng\libpng.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.54
