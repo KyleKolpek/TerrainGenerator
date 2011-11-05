@@ -1,3 +1,8 @@
+///////////////////////////////////////////////////////////////////////////////
+// DiamondSquare
+// Produces fractal noise following the diamond-square algorithm.
+// Currently restricted to dimensions (n^2)+1 width/height.
+///////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -8,29 +13,44 @@ using namespace std;
 
 double SEED = .5;
 
-void square(double** heightMap, int rows, int columns, double variance, int sideLength);
-void diamond(double** heightMap, int rows, int columns, double variance, int sideLength);
-bool isPointValid(int rows, int columns, int row, int column);
+void square(
+    double** heightMap,
+    int rows,
+    int columns,
+    double variance,
+    int sideLength);
+void diamond(
+    double** heightMap,
+    int rows,
+    int columns,
+    double variance,
+    int sideLength);
+bool isPointValid(
+    int rows,
+    int columns,
+    int row,
+    int column);
 
 int main(int argc, char* argv[]) {
 
     if(argc != 6)
     {
-        cerr << "DiamondSquare.exe width/height bit_depth initial_variance rate_of_change(!=0) outfile" << endl;
-        //cerr << "[top_left=.5 top_right=.5 bottom_left=.5 bottom_right=.5]";
+        cerr << "DiamondSquare.exe width/height bit_depth initial_variance"
+                "rate_of_change(!=0) outfile" << endl;
+        //      "[top_left=.5 top_right=.5 bottom_left=.5 bottom_right=.5]";
         return 1;
     }
     // Get command line parameters
-    int columns = strtol(argv[1],NULL,0);
-    int rows = strtol(argv[1],NULL,0);
-    int bitDepth = strtol(argv[2],NULL,0);
+    int columns  = strtol(argv[1], NULL, 0);
+    int rows     = strtol(argv[1], NULL, 0);
+    int bitDepth = strtol(argv[2], NULL, 0);
 
     //the range (-VARIANCE -> +VARIANCE) for the average offset
-    double variance = strtod(argv[3],NULL);
-    double rateOfChange = strtod(argv[4],NULL);
+    double variance     = strtod(argv[3], NULL);
+    double rateOfChange = strtod(argv[4], NULL);
 
     // Check if width/height is a (power of 2) + 1
-    if(((rows-1) & (rows-2)) != 0)
+    if( ((rows-1) & (rows-2)) != 0)
     {
         cerr << "ERROR: width/height must be a power of 2 + 1" << endl;
         return 1;
@@ -39,10 +59,12 @@ int main(int argc, char* argv[]) {
 
     // heightMap contains values between 0 and .999
     double** heightMap;
+
     // normalizedMaps are used to store values once they have been normalized
     // to the range [0 - 2^bitDepth)
     png_uint_16 **normalizedMap16;
     png_byte **normalizedMap8;
+    
     // rowPtrs contains pointers to the rows in normalizedMap
     // It is needed for writing the PNGs
     png_byte **rowPtrs;
@@ -51,15 +73,17 @@ int main(int argc, char* argv[]) {
     for (int i = 0; i < rows; i++)
         heightMap[i] = new double[columns];
 
-    srand(time(NULL));
     // Seed corners
+    srand(time(NULL));
     heightMap[0][0] = (float)rand() /RAND_MAX;
     heightMap[0][columns - 1] = (float)rand() /RAND_MAX;
     heightMap[rows - 1][0] = (float)rand() /RAND_MAX;
     heightMap[rows - 1][columns - 1] = (float)rand() /RAND_MAX;
 
     // Perform diamond square algorithm
-    for(int sideLength=columns-1; sideLength>1; sideLength/=2, variance*=rateOfChange)
+    for(int sideLength=columns-1;
+            sideLength>1;
+            sideLength/=2, variance*=rateOfChange)
     {
         square(heightMap, rows, columns, variance, sideLength);
         diamond(heightMap, rows, columns, variance, sideLength);
@@ -100,17 +124,19 @@ int main(int argc, char* argv[]) {
         {
             if(bitDepth == 8)
             {
-                normalizedMap8[r][c] = PNGTools::normalizeTo8Bit(heightMap[r][c]);
+                normalizedMap8[r][c] = PNGTools::normalizeTo8Bit(
+                                           heightMap[r][c]);
             }
             else if(bitDepth == 16)
             {
-                normalizedMap16[r][c] = PNGTools::normalizeTo16Bit(heightMap[r][c]);
+                normalizedMap16[r][c] = PNGTools::normalizeTo16Bit(
+                                            heightMap[r][c]);
             }
         }
     }
 
     // Write to the file
-    PNGTools::writePNGFile(argv[5],rowPtrs,columns,rows,bitDepth);
+    PNGTools::writePNGFile(argv[5], rowPtrs, columns, rows, bitDepth);
 
     // Cleanup
     for (int r=0; r<rows; r++)
@@ -137,7 +163,20 @@ int main(int argc, char* argv[]) {
     delete[] rowPtrs;
 }
 
-void square(double** heightMap, int rows, int columns, double variance, int sideLength)
+///////////////////////////////////////////////////////////////////////////////
+// square()
+// Performs the "square" operations which takes the values at four corners of
+// a square as described by the two corners [r,c] and
+// [r+sideLength,c+sidelength] in heightMap and stores the average of the
+// values + varience*(rand(-1,1)) in heightMap at the center of the four
+// coordinates.
+///////////////////////////////////////////////////////////////////////////////
+void square(
+    double** heightMap,
+    int rows,
+    int columns,
+    double variance,
+    int sideLength)
 {
     int halfSide = sideLength/2;
 
@@ -149,15 +188,30 @@ void square(double** heightMap, int rows, int columns, double variance, int side
                 heightMap[r+sideLength][c+sideLength]+
                 heightMap[r+sideLength][c]+
                 heightMap[r][c+sideLength];
-            avg/=4;
+            avg /= 4;
+
             //fix overflow
-            heightMap[r+halfSide][c+halfSide]=
-                avg+(double)rand()/RAND_MAX*2.0*variance-variance;
+            heightMap[r+halfSide][c+halfSide] =
+                avg + (double)rand() / RAND_MAX * 2.0 * variance - variance;
         }
     }
 }
 
-void diamond(double** heightMap, int rows, int columns, double variance, int sideLength)
+///////////////////////////////////////////////////////////////////////////////
+// diamond()
+// Performs the "square" operations which takes the values at four corners of
+// a diamond as described by the four corners [r+sideLength/2,c],
+// [r,c+sidelength/2],[r+sideLength,c+sidelength/2],
+// and [r+sidelength/2,c+sidelength] in heightMap and stores the average of the
+// values + varience*(rand(-1,1)) in heightMap at the center of the four
+// coordinates.
+///////////////////////////////////////////////////////////////////////////////
+void diamond(
+    double** heightMap,
+    int rows,
+    int columns,
+    double variance,
+    int sideLength)
 {
     int halfSide = sideLength/2;
     for(int c=0; c < columns; c+=halfSide)
@@ -169,38 +223,50 @@ void diamond(double** heightMap, int rows, int columns, double variance, int sid
             if(isPointValid(rows, columns, r, c-halfSide))
             {
                 count++;
-                avg+=heightMap[r][c-halfSide];
+                avg += heightMap[r][c-halfSide];
             }
             if(isPointValid(rows, columns, r, c+halfSide))
             {
                 count++;
-                avg+=heightMap[r][c+halfSide];
+                avg += heightMap[r][c+halfSide];
             }
             if(isPointValid(rows, columns, r+halfSide, c))
             {
                 count++;
-                avg+=heightMap[r+halfSide][c];
+                avg += heightMap[r+halfSide][c];
             }
             if(isPointValid(rows, columns, r-halfSide, c))
             {
                 count++;
-                avg+=heightMap[r-halfSide][c];
+                avg += heightMap[r-halfSide][c];
             }
-            avg/=count;
+            avg /= count;
             //fix overflow
             heightMap[r][c]=
-                avg+((double)rand())/(RAND_MAX)*2.0*variance-variance;
+                avg + (double)rand() / RAND_MAX * 2.0 * variance - variance;
         }
     }
 }
 
-bool isPointValid(int rows, int columns, int row,int column)
+///////////////////////////////////////////////////////////////////////////////
+// isPointValid()
+// Simple check to make sure (row,column) is between (0,0) and (rows,columns).
+// Returns true if this is the case, and false otherwise.
+///////////////////////////////////////////////////////////////////////////////
+bool isPointValid(
+    int rows,
+    int columns,
+    int row,
+    int column)
 {
-    bool flag = true;
     if(row<0 || column<0)
-        flag = false;
+    {
+        return false;
+    }
     if(row>=rows || column>=columns)
-        flag = false;
-    return flag;
+    {
+        return false;
+    }
+    return true;
 }
 

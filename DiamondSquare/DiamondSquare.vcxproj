@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DiamodSquare.cpp" />
+    <ClCompile Include="DiamondSquare.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F329478F-855E-40C2-8471-5BFB33F3AA1C}</ProjectGuid>
